@@ -1,0 +1,1 @@
+# idoko-gosano.github.io
