@@ -1,4 +1,5 @@
 document.getElementById("getLocation").addEventListener("click", function () {
+    const range = parseFloat(document.getElementById("range").value);
     if ("geolocation" in navigator) {
         navigator.geolocation.getCurrentPosition(
             (position) => {
