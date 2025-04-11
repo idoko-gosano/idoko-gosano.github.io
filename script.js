@@ -34,7 +34,8 @@ googleLink.target = "_blank";
 
 // Apple Mapリンク
 // const appleMapUrl = `https://maps.apple.com/?ll=${randomLocation.latitude},${randomLocation.longitude}`;
-const appleMapUrl = `https://maps.apple.com/?ll=${randomLocation.latitude},${randomLocation.longitude}&q=ランダム地点`;
+const label = `ランダム地点`;
+const appleMapUrl = `https://maps.apple.com/?q=${randomLocation.latitude},${randomLocation.longitude} (${label})`;
 const appleLink = document.createElement("a");
 appleLink.href = appleMapUrl;
 appleLink.textContent = "→ Appleマップで開く";
