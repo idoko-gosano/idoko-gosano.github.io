@@ -1,1 +1,1 @@
-# idoko-gosano.github.io
+らんどまっぷ
