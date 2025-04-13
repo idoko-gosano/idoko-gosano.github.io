@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Randmap</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>どこかへ行こう</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="">
-    <h1>Randmap</h1>
-    <label for="range">目的地までの距離（km）:</label>
+  <h1>どこかへ行こう</h1>
+  <label for="range">距離を入力（km）:</label>
+  <input type="number" id="range" placeholder="例: 3" />
+  <button onclick="findRandomLocation()">場所を探す</button>
+  <div id="location"></div>
 
-<input type="number" id="range" min="0.1" step="any" value="1">
-
-
-    <button id="getLocation">位置を生成</button>
-    <p id="location"></p>
-    </div>
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
